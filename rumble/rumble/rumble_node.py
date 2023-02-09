@@ -52,7 +52,7 @@ class BumpSubscriber(Node):
             HazardDetectionVector,
             'hazard_detection',
             self.listener_callback,
-            10,
+            rclpy.qos.QoSPresetProfiles.SENSOR_DATA.value
         )
 
         self.subscription
